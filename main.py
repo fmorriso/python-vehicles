@@ -18,3 +18,6 @@ if __name__ == '__main__':
 
     car2 = Car('red', 30000)
     print(car2)
+
+    car3 = Car('white', 999)
+    print(car3)
