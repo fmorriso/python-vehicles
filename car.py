@@ -4,7 +4,10 @@ class Car:
         self.color: str = color
         self.mileage: int = mileage
 
+    @staticmethod
+    def format_with_comma_separator(amount: float) -> str:
+        return f"{amount:,}"
+
     def __str__(self):
         # notice that mileage is printed with commas for thousands separation
-        return f'The {self.color} car has {self.mileage:,} miles.'
-
+        return f'The {self.color} car has {Car.format_with_comma_separator(self.mileage)} miles.'
