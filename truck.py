@@ -15,5 +15,5 @@ class Truck:
         return locale.currency(amount, grouping=True)
 
     def __str__(self):
-        # notice that mileage is printed with commas for thousands separation
+        # notice that mileage is printed with commas for thousands separation and cost is formatted as currency (US)
         return f'The {self.color} truck has {self.mileage:,} miles and costs {Truck.format_currency(self.cost)}.'
