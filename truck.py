@@ -7,7 +7,8 @@ class Truck:
         self.mileage: int = mileage
         self.cost: float = cost
 
-    def format_currency(self, amount: float) -> str:
+    @staticmethod
+    def format_currency(amount: float) -> str:
         # set locale to US
         locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
         # format currency value
@@ -15,4 +16,4 @@ class Truck:
 
     def __str__(self):
         # notice that mileage is printed with commas for thousands separation
-        return f'The {self.color} truck has {self.mileage:,} miles and costs {self.format_currency(self.cost)}.'
+        return f'The {self.color} truck has {self.mileage:,} miles and costs {Truck.format_currency(self.cost)}.'
