@@ -1,6 +1,7 @@
 import sys
 
 from car import Car
+from truck import Truck
 
 
 @staticmethod
@@ -21,3 +22,6 @@ if __name__ == '__main__':
 
     car3 = Car('white', 999)
     print(car3)
+
+    truck1 = Truck('black', 2000, 72000.61)
+    print(truck1)
