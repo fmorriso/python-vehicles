@@ -5,7 +5,7 @@ class Car:
         self.mileage: int = mileage
 
     @staticmethod
-    def format_with_comma_separator(amount: float) -> str:
+    def format_with_comma_separator(amount: float | int) -> str:
         return f"{amount:,}"
 
     def __str__(self):
