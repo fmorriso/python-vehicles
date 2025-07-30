@@ -2,6 +2,8 @@ import locale
 from abc import ABC, abstractmethod
 from typing import Optional
 
+from string_builder import StringBuilder
+
 
 class Vehicle(ABC):
 
@@ -28,3 +30,12 @@ class Vehicle(ABC):
     def format_mileage(cls, amount: float | int) -> str:
         # Format with grouping, no currency symbol
         return locale.format_string('%.1f', amount, grouping = True)
+
+
+    def __str__(self):
+        sbr = StringBuilder()
+        # notice that mileage is printed with commas for thousands separation and cost is formatted as currency (US)
+        sbr.append(f'The {self.color} truck has {self.format_mileage(self.mileage)} miles')
+        if self.cost is not None:
+            sbr.append(f' and costs {self.format_currency(self.cost)}.')
+        return sbr.to_string()
