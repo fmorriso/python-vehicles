@@ -35,7 +35,7 @@ class Vehicle(ABC):
     def __str__(self):
         sbr = StringBuilder()
         # notice that mileage is printed with commas for thousands separation and cost is formatted as currency (US)
-        sbr.append(f'The {self.color} truck has {self.format_mileage(self.mileage)} miles')
+        sbr.append(f'The {self.color} {self.get_type()} has {self.format_mileage(self.mileage)} miles')
         if self.cost is not None:
             sbr.append(f' and costs {self.format_currency(self.cost)}.')
         return sbr.to_string()
