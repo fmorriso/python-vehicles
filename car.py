@@ -1,13 +1,16 @@
-class Car:
+from vehicle import Vehicle
+
+
+class Car(Vehicle):
 
     def __init__(self, color: str, mileage: int):
-        self.color: str = color
-        self.mileage: int = mileage
+        super().__init__(color, mileage)
 
-    @staticmethod
-    def format_with_comma_separator(amount: float | int) -> str:
-        return f"{amount:,}"
 
     def __str__(self):
         # notice that mileage is printed with commas for thousands separation
-        return f'The {self.color} car has {Car.format_with_comma_separator(self.mileage)} miles.'
+        return f'The {self.color} car has {self.format_mileage(self.mileage)} miles.'
+
+
+    def get_type(self) -> str:
+        return self.__class__.__name__

@@ -15,9 +15,10 @@ This project illustrates how to:
 
 ## Change History
 
-| Date       | Description              |
-|:-----------|:-------------------------|
-| 2025-07-23 | upgrade to Python 3.13.5 |
+| Date       | Description                   |
+|:-----------|:------------------------------|
+| 2025-07-23 | upgrade to Python 3.13.5      |
+| 2025-07-30 | Create abstract Vehicle class |
 
 ## References
 * [Add comma separator in numbers](https://www.tutorialstonight.com/python-number-format#comma-separator)
