@@ -7,18 +7,19 @@ This project illustrates how to:
 
 ## Tools Used
 
-| Tool     |  Version |
-|:---------|---------:|
-| Python   |   3.13.5 |
-| PyCharm  | 2025.1.2 |
-| VSCode   |  1.102.1 |
+| Tool     | Version |
+|:---------|--------:|
+| Python   |  3.13.5 |
+| PyCharm  |  2025.2 |
+| VSCode   | 1.102.3 |
 
 ## Change History
 
-| Date       | Description                   |
-|:-----------|:------------------------------|
-| 2025-07-23 | upgrade to Python 3.13.5      |
-| 2025-07-30 | Create abstract Vehicle class |
+| Date       | Description                          |
+|:-----------|:-------------------------------------|
+| 2025-07-23 | upgrade to Python 3.13.5             |
+| 2025-07-30 | Create abstract Vehicle class        |
+| 2025-08-06 | add documentation header for classes |
 
 ## References
 * [Add comma separator in numbers](https://www.tutorialstonight.com/python-number-format#comma-separator)

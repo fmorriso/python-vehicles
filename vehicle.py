@@ -6,6 +6,7 @@ from string_builder import StringBuilder
 
 
 class Vehicle(ABC):
+    """An abstract class to represent a vehicle."""
 
     def __init__(self, color: str, mileage: int, cost: Optional[float] = None):
         self.color: str = color
