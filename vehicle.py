@@ -11,7 +11,7 @@ class Vehicle(ABC):
     def __init__(self, color: str, mileage: int, cost: Optional[float] = None):
         self.color: str = color
         self.mileage: int = mileage
-        self.cost: float = cost
+        self.cost: float | None = cost
         # set locale to US
         locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
 

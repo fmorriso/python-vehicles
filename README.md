@@ -1,26 +1,32 @@
 # Vehicles
- Python - Vehicles - With str method override
+
+Python - Vehicles - With str method override
+
 ## Description
+
 This project illustrates how to:
+
 1. format numbers with commas for thousands separation.
 1. format numbers as currency values
 
 ## Tools Used
 
-| Tool     | Version |
-|:---------|--------:|
-| Python   |  3.13.5 |
-| PyCharm  |  2025.2 |
-| VSCode   | 1.102.3 |
+| Tool    | Version |
+| :------ | ------: |
+| Python  |  3.14.0 |
+| PyCharm |  2025.2 |
+| VSCode  | 1.105.1 |
 
 ## Change History
 
-| Date       | Description                          |
-|:-----------|:-------------------------------------|
-| 2025-07-23 | upgrade to Python 3.13.5             |
-| 2025-07-30 | Create abstract Vehicle class        |
-| 2025-08-06 | add documentation header for classes |
+| Date       | Description                                                |
+| :--------- | :--------------------------------------------------------- |
+| 2025-07-23 | upgrade to Python 3.13.5                                   |
+| 2025-07-30 | Create abstract Vehicle class                              |
+| 2025-08-06 | add documentation header for classes                       |
+| 2025-11-10 | fix warning when initializing cost from optional parameter |
 
 ## References
-* [Add comma separator in numbers](https://www.tutorialstonight.com/python-number-format#comma-separator)
-* [Format number as currency](https://www.tutorialstonight.com/python-number-format#format-currency)
+
+- [Add comma separator in numbers](https://www.tutorialstonight.com/python-number-format#comma-separator)
+- [Format number as currency](https://www.tutorialstonight.com/python-number-format#format-currency)
